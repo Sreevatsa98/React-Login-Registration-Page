@@ -12,23 +12,26 @@ export const Registration = (props) => {
 
     return (
 
-        <form onSubmit={handleSubmit}>
-            {/* <div>hello</div> */}
-            <div id="content">
+        <div className="auth-form-container">
+            <form className="registration-form" onSubmit={handleSubmit}>
+                {/* <div>hello</div> */}
+                <div id="content">
+                    <h1>Registration</h1>
 
-                <label htmlFor="name">Full Name</label>
-                <input value={name} onChange={(e) => setName(e.target.value)} type="text" name="" id="name" placeholder="Sam"/>
+                    <label htmlFor="name">Full Name</label><br />
+                    <input value={name} onChange={(e) => setName(e.target.value)} type="text" name="" id="name" placeholder="Sam"/> <br />
 
-                <label htmlFor="email">Email ID</label>
-                <input value={email} onChange={(e) => setEmail(e.target.value)} type="text" name="" id="email" placeholder="hello@gmail.com"/>
+                    <label htmlFor="email">Email ID</label><br />
+                    <input value={email} onChange={(e) => setEmail(e.target.value)} type="text" name="" id="email" placeholder="hello@gmail.com"/> <br />
 
-                <label htmlFor="password">Password</label>
-                <input value={pass} onChange={(e) => setPass(e.target.value)} type="password" name="" id="pass" placeholder="**********"/>
+                    <label htmlFor="password">Password</label> <br />
+                    <input value={pass} onChange={(e) => setPass(e.target.value)} type="password" name="" id="pass" placeholder="**********"/> <br />
 
-                <button type="button">Login</button>
-                <p onClick={() => props.onFormSwitch('login')}>Already have an account? Login Here!</p>
-                {/* <p onClick={() => props.onFormSwitch('Registration')}>Don't have an account register here!</p> */}
-            </div>
-        </form>
+                    <button type="button">Login</button>
+                    <p onClick={() => props.onFormSwitch('login')}>Already have an account? Login Here!</p>
+                    {/* <p onClick={() => props.onFormSwitch('Registration')}>Don't have an account register here!</p> */}
+                </div>
+            </form>
+        </div>
     )
 }
