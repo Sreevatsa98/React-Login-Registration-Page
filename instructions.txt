@@ -1,0 +1,24 @@
+To run the project 
+
+npm start 
+
+Login page credentials
+
+Email: test@gmail.com   
+Password: test@123
+
+Registration Form 
+=> Fill in all the details and it will get submitted into an Google Spreadsheet 
+=> To see that go to App.js
+=> Comment this line --- "currentForm === 'login' ? <Login onFormSwitch={toggleForm} /> : <Registration onFormSwitch={toggleForm}/>"
+=> Uncommet --- "<UserData />" and reload the page it will display all the record in the table format
+
+# All the changed is been Commited through "Git" #
+
+Validation had to be removed since there was some error in uploading the file to Google Spreadsheet 
+
+My apologies I couldn't implement insertion, deletion and update with sorting and filtering due to short of time
+
+Hope you consider it 
+
+Thank you 

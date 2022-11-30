@@ -4,6 +4,7 @@ import logo from './logo.svg';
 import './App.css';
 import { Login } from './Login'
 import { Registration } from './Registration'
+import { Userdata } from './Userdata'
 
 
 function App() {
@@ -17,10 +18,12 @@ function App() {
   return (
     <div className="App">
       {
-        currentForm === 'login' ? <Login onFormSwitch={toggleForm} /> : <Registration onFormSwitch={toggleForm}/>
+        currentForm === 'login' ? <Login onFormSwitch={toggleForm} /> : <Registration onFormSwitch={toggleForm}/> 
       }
      {/* <Login /> */}
      {/* <Registration /> */}
+     {/* <Userdata /> */}
+     
     </div>
   );
 }

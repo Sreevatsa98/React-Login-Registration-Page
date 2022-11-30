@@ -1,0 +1,18 @@
+#userform{
+    width: 1200px;
+    height: 600px;
+}
+
+table{
+    /* display: flex; */
+    color: black;
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-family: cursive;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+td{
+    padding: 20px;
+}

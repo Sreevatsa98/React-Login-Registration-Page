@@ -15,12 +15,6 @@ export const Registration = (props) => {
     const [mobile, setMobile] = useState('');
 
     const handleSubmit = (e) => {
-        e.preventDefault();
-
-        // //Error
-        // if(name.length==0||email.length==0||password.length==0||mobile.length==0){
-        //     setError(true)
-        // }
 
 
         console.log(name,email,password,mobile);
@@ -31,14 +25,18 @@ export const Registration = (props) => {
             password:password,
             mobile:mobile
         }
-        axios.post('https://sheet.best/api/sheets/872604eb-e060-4c25-879a-adc24e766b63', data).then((response)=>{
+        axios.post('https://sheet.best/api/sheets/4c0c457a-ea97-4ac5-a409-3b1e779e95c8', data).then((response)=>{
             console.log(response);
+
             //Clearing the fields
             setName('');
             setEmail('');
             setPassword('');
             setMobile('');
+            
+            // location.reload();
         })
+        alert("User Added");
     }
 
     return (
@@ -54,7 +52,7 @@ export const Registration = (props) => {
                     {/* <span>{errors.name?.type==="required" && "*Enter Name Reqired"}</span>
                     <span>{errors.name?.type==="maxLength" && "*Name exceed 20 character"}</span>
                     <span>{errors.name?.type==="minLength" && "*Should have atleast 3 char"}</span> */}
-                   {/* <span>
+                    {/* <span>
                    {errors.email?.type=="0" && "*Email Reqired"}</span> */}
                     <input type="text" /*{...register("name",{required:true,
                     pattern: {
@@ -83,7 +81,7 @@ export const Registration = (props) => {
                         value: /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,20}$/,
                         // message: 'Please enter a valid email'
                     },
-                    })}*/ id="pass" placeholder="**********"
+                    })}*/ id="pass" placeholder="**********" 
                     onChange={(e)=>setPassword(e.target.value)} value={password}/> <br />
 
                     {/* <label htmlFor="conpassword">Confirm Password</label> <br />
@@ -100,7 +98,7 @@ export const Registration = (props) => {
                         // message: 'Please enter a valid email'
                     },
                     
-                    })}*/ id="mobile" placeholder="987-456-7890"
+                    })}*/ id="mobile" placeholder="987-456-7890" 
                     onChange={(e)=>setMobile(e.target.value)} value={mobile}/> <br />
                     
                     {/* <span>{errors.mobile?.type==="required" && "Mobile Number Reqired"}</span><br />

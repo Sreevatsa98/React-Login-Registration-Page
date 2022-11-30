@@ -8,14 +8,10 @@
 }
 
 .auth-form-container, .login-form, .registration-form{
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* align-items: center; */
   background-color: aqua;
   background-image: linear-gradient(to bottom, #DC5F00, #EEEEEE);
-  /* box-shadow: 0px 0px red; */
   box-shadow: 0 0 20px black;
-  width: 400px;
+  width: 450px;
   height: 520px;
   border: 1px solid white;
 }
@@ -23,22 +19,19 @@
 label{
   display: block;
   text-align: left;
-  /* margin-bottom: 5em 0; */
   font-weight: bolder;
-  font-size: 1.2em;
-  margin-left: 10vh;
-  margin-top: 2vh;
-  /* padding: 10rem ; */
-  /* right: 100%; */
+  font-size: 1em;
+  margin-left: 10px;
+
 }
 
 input{
   display: block;
   border: none;
   border-radius: 20px;
-  margin-left: 80px;
-  height: 30px;
-  width: 200px;
+  margin-left: 40px;
+  height: 25px;
+  width: 180px;
   padding-left: 10px;
 }
 
@@ -47,7 +40,7 @@ button{
   margin-left: 24vh;
   border: none;
   width: 70px;
-  height: 40px;
+  height: 30px;
   font-size: 20px;
   font-weight: bolder;
   margin-bottom: 20px;
@@ -55,4 +48,15 @@ button{
 
 p{
   cursor: pointer;
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+span{
+  display: flex;
+  float: right;
+  margin: 0;
+  padding: 0;
+  margin-right: 10px;
+  color: red;
 }
